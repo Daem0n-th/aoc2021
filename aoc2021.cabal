@@ -24,7 +24,7 @@ source-repository head
 
 library
   exposed-modules:
-      Advent.Solutions
+      Advent.Solutions.DayOne
       Advent.Utils
   other-modules:
       Paths_aoc2021

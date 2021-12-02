@@ -3,11 +3,9 @@ module Advent.Solutions.DayOne where
 import Advent.Utils (stringToList)
 
 dayOne :: IO ()
-dayOne = do
-  input <- readFile "./inputs/dayOne"
-  let inputList = stringToList input
-  putStrLn $ "Part One : " ++ show (partOne inputList)
-  putStrLn $ "Part Two : " ++ show (partTwo inputList)
+dayOne = solve =<< readFile "./inputs/dayOne"
+  where
+    solve a = mapM_ (\x -> (print . x . stringToList) a) [partOne, partTwo]
 
 partOne :: [Int] -> Int
 partOne [] = 0

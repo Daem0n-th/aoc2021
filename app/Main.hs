@@ -1,6 +1,6 @@
 module Main where
 
-import Advent.Solutions.DayOne (dayOne)
+import Advent.Solutions.All
 import System.Environment (getArgs)
 import System.Exit (die)
 
@@ -15,4 +15,5 @@ main = do
 solutionOf :: Int -> IO ()
 solutionOf day = case day of
   1 -> dayOne
+  2 -> dayTwo
   _ -> error "Invalid Day!"

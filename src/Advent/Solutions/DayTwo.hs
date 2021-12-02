@@ -2,10 +2,9 @@ module Advent.Solutions.DayTwo where
 
 dayTwo :: IO ()
 dayTwo = do
-  input <- readFile "./inputs/dayTwo"
-  let il = lines input
-  print $ partOne il
-  print $ partTwo il
+  input <- lines <$> readFile "./inputs/dayTwo"
+  print $ partOne input
+  print $ partTwo input
 
 partOne :: [String] -> Int
 partOne = uncurry (*) . foldl func (0, 0)

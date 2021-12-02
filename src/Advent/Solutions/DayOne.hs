@@ -1,11 +1,10 @@
 module Advent.Solutions.DayOne where
 
-import Advent.Utils (stringToList)
-
 dayOne :: IO ()
-dayOne = solve =<< readFile "./inputs/dayOne"
-  where
-    solve a = mapM_ (\x -> (print . x . stringToList) a) [partOne, partTwo]
+dayOne = do
+  input <- map read . lines <$> readFile "./inputs/dayOne"
+  print $ partOne input
+  print $ partTwo input
 
 partOne :: [Int] -> Int
 partOne [] = 0

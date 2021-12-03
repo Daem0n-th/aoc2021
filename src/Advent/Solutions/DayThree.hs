@@ -26,7 +26,6 @@ cfilter _ _ [x] = [x]
 cfilter f i x = cfilter f (i + 1) (filter func x)
   where
     func xs = f x !! i == xs !! i
-    mCom = map mostCommon . transpose
 
 mostCommonColumn :: [String] -> String
 mostCommonColumn = intercalate "" . map mostCommon . transpose

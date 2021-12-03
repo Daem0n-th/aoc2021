@@ -16,4 +16,5 @@ solutionOf :: Int -> IO ()
 solutionOf day = case day of
   1 -> dayOne
   2 -> dayTwo
+  3 -> dayThree
   _ -> error "Invalid Day!"

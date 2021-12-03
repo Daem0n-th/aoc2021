@@ -1,8 +1,7 @@
 module Advent.Solutions.DayThree where
 
-import Data.Bits (Bits (complement))
-import Data.Function
-import Data.List
+import Data.Function (on)
+import Data.List (group, intercalate, maximumBy, sort, transpose)
 
 dayThree :: IO ()
 dayThree = do

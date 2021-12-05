@@ -1,6 +1,6 @@
 module Advent.Solutions.DayFive where
 
-import Data.List
+import Data.List (group, sort)
 import Data.List.Split (splitOn)
 
 type Vent = (Int, Int)

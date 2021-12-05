@@ -18,4 +18,5 @@ solutionOf day = case day of
   2 -> dayTwo
   3 -> dayThree
   4 -> dayFour
+  5 -> dayFive
   _ -> error "Invalid Day!"

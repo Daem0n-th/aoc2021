@@ -24,6 +24,7 @@ source-repository head
 
 library
   exposed-modules:
+      Advent.Solutions
       Advent.Solutions.All
       Advent.Solutions.DayFive
       Advent.Solutions.DayFour

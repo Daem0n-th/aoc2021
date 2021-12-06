@@ -1,6 +1,6 @@
 module Main where
 
-import Advent.Solutions.All
+import Advent.Solutions
 import System.Environment (getArgs)
 import System.Exit (die)
 

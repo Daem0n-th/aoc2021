@@ -1,4 +1,4 @@
-module Advent.Solutions.All (dayOne, dayTwo, dayThree, dayFour, dayFive, daySix) where
+module Advent.Solutions (dayOne, dayTwo, dayThree, dayFour, dayFive, daySix) where
 
 import Advent.Solutions.DayFive (dayFive)
 import Advent.Solutions.DayFour (dayFour)

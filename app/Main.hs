@@ -20,4 +20,4 @@ solutionOf day = case day of
   4 -> dayFour
   5 -> dayFive
   6 -> daySix
-  _ -> error "Invalid Day!"
+  _ -> die "Invalid Day!"

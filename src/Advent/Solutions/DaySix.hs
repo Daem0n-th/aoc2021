@@ -10,22 +10,22 @@ daySix = do
   print $ partOne input
   print $ partTwo input
 
-parse :: [Int] -> [Int]
+parse :: [Int] -> [Integer]
 parse = foldl (\acc x -> addAt x 1 acc) zeros
   where
     zeros = replicate 9 0
 
-partOne :: [Int] -> Int
+partOne :: [Integer] -> Integer
 partOne = sum . atDay 80
 
-partTwo :: [Int] -> Int
+partTwo :: [Integer] -> Integer
 partTwo = sum . atDay 256
 
-atDay :: Int -> [Int] -> [Int]
+atDay :: Integer -> [Integer] -> [Integer]
 atDay 0 xs = xs
 atDay n xs = atDay (pred n) (fishGrowth xs)
 
-fishGrowth :: [Int] -> [Int]
+fishGrowth :: [Integer] -> [Integer]
 fishGrowth = (\x -> addAt 6 (last x) x) . rotateL
   where
     rotateL [] = []

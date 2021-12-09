@@ -1,9 +1,7 @@
 module Advent.Solutions.DayNine where
 
 import Data.List (sortOn)
-import Data.Maybe (catMaybes, fromJust, mapMaybe)
 import Data.Ord (Down (Down))
-import Debug.Trace (trace)
 
 dayNine :: IO ()
 dayNine = do

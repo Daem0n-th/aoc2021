@@ -2,7 +2,6 @@ module Advent.Solutions.DayTen where
 
 import Data.Either (lefts, rights)
 import Data.List (sort)
-import Data.Maybe (mapMaybe)
 
 type Stack = [String]
 

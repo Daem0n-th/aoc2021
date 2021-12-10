@@ -32,6 +32,7 @@ library
       Advent.Solutions.DayOne
       Advent.Solutions.DaySeven
       Advent.Solutions.DaySix
+      Advent.Solutions.DayTen
       Advent.Solutions.DayThree
       Advent.Solutions.DayTwo
       Advent.Utils

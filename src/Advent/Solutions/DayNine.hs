@@ -27,13 +27,13 @@ basinPoints arr ep p = if el arr p < 9 && notElem p ep then foldl (basinPoints a
 localMinimas :: [[Int]] -> [(Int, Int)]
 localMinimas arr = filter (isLocalMinima arr) (indices arr)
 
-indices :: [[Int]] -> [(Int, Int)]
-indices arr = [(x, y) | x <- [0 .. length arr -1], y <- [0 .. length (head arr) -1]]
-
 isLocalMinima :: [[Int]] -> (Int, Int) -> Bool
 isLocalMinima arr p = all (center <) (adjacent arr p)
   where
     center = el arr p
+
+indices :: [[Int]] -> [(Int, Int)]
+indices arr = [(x, y) | x <- [0 .. length arr -1], y <- [0 .. length (head arr) -1]]
 
 adjacent :: [[Int]] -> (Int, Int) -> [Int]
 adjacent arr p = map (el arr) (adjacentCoords arr p)

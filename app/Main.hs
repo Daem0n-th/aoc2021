@@ -26,4 +26,5 @@ solutionOf day = case day of
   10 -> dayTen
   11 -> dayEleven
   12 -> dayTweleve
+  13 -> dayThirteen
   _ -> die "Invalid Day!"

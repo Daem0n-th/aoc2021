@@ -29,6 +29,7 @@ library
       Advent.Solutions.DayEleven
       Advent.Solutions.DayFive
       Advent.Solutions.DayFour
+      Advent.Solutions.DayFourteen
       Advent.Solutions.DayNine
       Advent.Solutions.DayOne
       Advent.Solutions.DaySeven
